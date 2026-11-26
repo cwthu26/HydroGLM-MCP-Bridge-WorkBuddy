@@ -6,26 +6,24 @@ npm 包名：`hydroglm-mcp-bridge` · 版本：`1.0.1` · npm 入口需要 Node.
 
 **Connect HydroGLM to your AI assistant through MCP.**
 
-HydroGLM MCP Bridge 将 **HydroGLM / HydroGLM-plus** 封装为 MCP 工具，让 Codex、WorkBuddy、Claude Desktop 等支持本地 MCP 的 AI 客户端，在处理水文、水资源、水库调度及水电任务时调用专业大模型。
+HydroGLM MCP Bridge 将 **HydroGLM / HydroGLM-plus** 封装为 MCP 工具，让 Codex、WorkBuddy、Claude Desktop、DeepSeek Harness 等支持本地 MCP 的 AI 客户端，在处理水文、水资源、水库调度及水电任务时调用专业大模型。
 
 > **工作方式：**客户端通过 `ask_hydroglm` 获取 HydroGLM 的专业建议，再由客户端自身的工具读取文件、运行 Python 或生成成果。HydroGLM API 不会直接操作本地文件。
 
 ## 一句话安装｜Agent Setup
 
-把本仓库的 GitHub 链接和下面这句话一起发给 WorkBuddy 桌面端：
+把本仓库的 GitHub 链接和下面这句话一起发给你正在使用的桌面客户端：
 
 ```text
-请打开我发给你的 GitHub 仓库，按 README 链接的在线安装说明，把 HydroGLM MCP Bridge 安装到当前 WorkBuddy。
+请打开我发给你的 GitHub 仓库，按 README 链接的在线安装说明，把 HydroGLM MCP Bridge 安装到我当前使用的客户端。
 ```
 
-WorkBuddy 会按[在线安装说明](agent-setup/prompt.md)校验文件、应用 WorkBuddy 专用文案并注册 `ask_hydroglm`。本机需要 Python 3.10+。首次添加后，在 WorkBuddy 中点「信任」。如果尚未配置瀚海 API Key，按提示在自己的终端私密输入。私有仓库需要 WorkBuddy 已获准读取。
-
-Codex、Claude Desktop 等支持本地 stdio MCP 的助手也可从同一份安装说明选择对应客户端的步骤。
+按[在线安装说明](agent-setup/prompt.md)选择 Codex、WorkBuddy、Claude Desktop 或 DeepSeek Harness 的安装路径。也支持其他可运行本地 stdio MCP 的客户端。本机需要 Python 3.10+。如果尚未配置瀚海 API Key，请在自己的终端私密输入。客户端需要有私有仓库的读取权限。
 
 ## Features
 
 - **专业模型调用**：通过 `ask_hydroglm` 咨询 HydroGLM 或 HydroGLM-plus。
-- **多客户端接入**：提供 Codex、WorkBuddy、Claude Desktop 及通用 stdio MCP 配置示例。
+- **多客户端接入**：提供 Codex、WorkBuddy、Claude Desktop、DeepSeek Harness 的接入说明和通用 stdio MCP 配置示例。
 - **按任务选用**：工具描述包含水利专业任务的选用提示；是否自动调用取决于宿主客户端。
 - **轻量部署**：仅需 Python 3.10+，无需额外安装 Python 依赖。
 - **独立密钥管理**：支持一次性保存模型 API Key，不必在 MCP 配置中明文填写。
@@ -122,8 +120,9 @@ python3 generate_config.py --client claude --output local.claude.mcp.json
 | Client | Setup Guide |
 | --- | --- |
 | Codex | [docs/Codex.md](docs/Codex.md) |
-| WorkBuddy | [MCP 配置示例](examples/workbuddy.mcp.json) |
+| WorkBuddy | [WorkBuddy 安装说明](agent-setup/workbuddy.md) · [MCP 配置示例](examples/workbuddy.mcp.json) |
 | Claude Desktop | [docs/Claude-Desktop.md](docs/Claude-Desktop.md) |
+| DeepSeek Harness | [DeepSeek Harness 安装说明](https://github.com/cwthu26/HydroGLM-MCP-Bridge-WorkBuddy/blob/codex/deepseek-harness/docs/DeepSeek-Harness.md) · [下载对应源码 ZIP](https://github.com/cwthu26/HydroGLM-MCP-Bridge-WorkBuddy/archive/refs/heads/codex/deepseek-harness.zip) |
 | 其他 stdio 客户端 | [examples/generic.mcp.json](examples/generic.mcp.json) |
 
 配置生成器会写入本机 Python 和 `server.py` 的**绝对路径**；若移动项目目录，需重新生成。WorkBuddy、Claude Desktop 的配置格式已有示例，具体运行兼容性应在所用客户端验证。
