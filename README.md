@@ -12,13 +12,13 @@ HydroGLM MCP Bridge 将 **HydroGLM / HydroGLM-plus** 封装为 MCP 工具，让 
 
 ## 一句话安装｜Agent Setup
 
-把本仓库的 GitHub 链接和下面这句话一起发给你正在使用的桌面客户端：
+把下面这句话发给你正在使用的 AI 客户端：
 
 ```text
-请打开我发给你的 GitHub 仓库，按 README 链接的在线安装说明，把 HydroGLM MCP Bridge 安装到我当前使用的客户端。
+Fetch and execute the appropriate instructions to set me up for HydroGLM MCP Bridge from https://github.com/cwthu26/HydroGLM-MCP-Bridge-WorkBuddy/blob/main/agent-setup/prompt.md
 ```
 
-按[在线安装说明](agent-setup/prompt.md)选择 Codex、WorkBuddy、Claude Desktop 或 DeepSeek Harness 的安装路径。也支持其他可运行本地 stdio MCP 的客户端。本机需要 Python 3.10+。如果尚未配置瀚海 API Key，请在自己的终端私密输入。客户端需要有私有仓库的读取权限。
+按[在线安装说明](agent-setup/prompt.md)选择 Codex、WorkBuddy、Claude Desktop 或 DeepSeek Harness 的安装路径。也支持其他可运行本地 stdio MCP 的客户端。本机需要 Python 3.10+。如果尚未配置瀚海 API Key，请在自己的终端私密输入。仓库为私有时，客户端需要有读取权限。
 
 ## Features
 
