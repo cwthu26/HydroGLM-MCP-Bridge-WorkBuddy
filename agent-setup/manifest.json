@@ -1,0 +1,31 @@
+{
+  "schemaVersion": "hydroglm.agent-setup.v1",
+  "release": "1.0.1",
+  "revision": "c90ffa008d6ac4013cdfbb0c72acc48145f77ad1",
+  "files": [
+    {
+      "path": "server.py",
+      "sizeBytes": 12322,
+      "sha256": "cb52b97e08d2b1ecefdc48e7e80f0c648c5d47fde72cccf6b1150b781f7b26d6",
+      "url": "https://raw.githubusercontent.com/LIMING-gloria/HydroGLM-MCP-Bridge/c90ffa008d6ac4013cdfbb0c72acc48145f77ad1/server.py"
+    },
+    {
+      "path": "generate_config.py",
+      "sizeBytes": 2939,
+      "sha256": "367301984dd9ed2ddfd88338b843b1524ed0bc04567848080ec4c88243e2f2b9",
+      "url": "https://raw.githubusercontent.com/LIMING-gloria/HydroGLM-MCP-Bridge/c90ffa008d6ac4013cdfbb0c72acc48145f77ad1/generate_config.py"
+    },
+    {
+      "path": "configure_key.py",
+      "sizeBytes": 2612,
+      "sha256": "84e68f23a4ce2622b9a94df77284afc1275e0923615ba2c7a91b85b2017c5aae",
+      "url": "https://raw.githubusercontent.com/LIMING-gloria/HydroGLM-MCP-Bridge/c90ffa008d6ac4013cdfbb0c72acc48145f77ad1/configure_key.py"
+    },
+    {
+      "path": "diagnose.py",
+      "sizeBytes": 3384,
+      "sha256": "c69bcb55091e9eedd6edcef6233956658c438366f86720baadaa54fab58ca7ea",
+      "url": "https://raw.githubusercontent.com/LIMING-gloria/HydroGLM-MCP-Bridge/c90ffa008d6ac4013cdfbb0c72acc48145f77ad1/diagnose.py"
+    }
+  ]
+}

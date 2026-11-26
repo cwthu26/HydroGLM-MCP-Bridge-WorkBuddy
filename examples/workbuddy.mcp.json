@@ -1,0 +1,13 @@
+{
+  "mcpServers": {
+    "hydroglm_bridge": {
+      "type": "stdio",
+      "command": "/absolute/path/to/python3",
+      "args": [
+        "-X",
+        "utf8",
+        "/absolute/path/to/HydroGLM-MCP-Bridge/server.py"
+      ]
+    }
+  }
+}
