@@ -1,0 +1,6 @@
+[mcp_servers.hydroglm_bridge]
+command = "/absolute/path/to/python3"
+args = ["-X", "utf8", "/absolute/path/to/HydroGLM-MCP-Bridge/server.py"]
+enabled = true
+startup_timeout_sec = 20
+tool_timeout_sec = 660

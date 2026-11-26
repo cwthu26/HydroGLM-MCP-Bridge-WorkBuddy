@@ -1,0 +1,47 @@
+{
+  "name": "hydroglm-mcp-bridge",
+  "version": "1.0.1",
+  "description": "Connect HydroGLM and HydroGLM-plus to local MCP clients through a dependency-free Python stdio service.",
+  "license": "MIT",
+  "author": "officialhydroglm",
+  "bin": {
+    "hydroglm-mcp-bridge": "bin/hydroglm-mcp-bridge.cjs"
+  },
+  "engines": {
+    "node": ">=22"
+  },
+  "keywords": [
+    "mcp",
+    "hydroglm",
+    "hydrology",
+    "water-resources",
+    "reservoir",
+    "stdio"
+  ],
+  "files": [
+    "bin/",
+    "server.py",
+    "configure_key.py",
+    "generate_config.py",
+    "diagnose.py",
+    "probe_chat.py",
+    "install_hydroglm_dsh.py",
+    "verify_hydroglm_dsh.py",
+    "README.md",
+    "CHANGELOG.md",
+    "RELEASE_NOTES.md",
+    "SECURITY.md",
+    "LICENSE",
+    "docs/",
+    "examples/",
+    "skills/"
+  ],
+  "scripts": {
+    "test": "node --test tests/cli.test.cjs && node scripts/run-python-tests.cjs",
+    "prepublishOnly": "npm test"
+  },
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
+  }
+}
