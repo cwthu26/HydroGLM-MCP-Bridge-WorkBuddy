@@ -11,7 +11,6 @@ Identify the client the user is installing into and use the matching row.
 | Codex | `--client codex` | Merge the server table, including its timeouts, into the active user `config.toml` (`$CODEX_HOME/config.toml` if set, otherwise `~/.codex/config.toml`). When available, check registration with `codex mcp get hydroglm_bridge`. |
 | WorkBuddy | `--client workbuddy` | First read the [WorkBuddy desktop guide](workbuddy.md), then follow the shared steps below. Use the guide to prepare the verified installation copy, register WorkBuddy, and verify the result. |
 | Claude Desktop | `--client claude` | Use the local config opened by Settings → Developer → Edit Config, and merge the entry into `mcpServers`. |
-| DeepSeek Harness | — | Follow the [DeepSeek Harness installation guide](https://github.com/cwthu26/HydroGLM-MCP-Bridge-WorkBuddy/blob/codex/deepseek-harness/docs/DeepSeek-Harness.md) with the [matching source ZIP](https://github.com/cwthu26/HydroGLM-MCP-Bridge-WorkBuddy/archive/refs/heads/codex/deepseek-harness.zip) from download through verification. |
 | Other local stdio clients | `--client generic` | Map the generated absolute command and arguments to the client's documented local MCP settings. |
 
 For Codex, WorkBuddy, Claude Desktop, and other local stdio clients, continue below to check Python, verify the release files, configure credentials, register the MCP server, and verify the tool.
